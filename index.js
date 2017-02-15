@@ -28,6 +28,7 @@ module.exports = function(pathStr) {
     if (path.isAbsolute(pathStr)) {
         return pathStr;
     } else {
-        return '.' + path.sep + pathStr;
+        // we don't need path.sep check tests in windows
+        return './' + pathStr;
     }
 };
