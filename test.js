@@ -11,6 +11,7 @@ it('should prepare path for require', () => {
 
 it('should work with absolute path', () => {
     var pathStr = path.resolve('index.js'); // it's absolute now
+    pathStr = required(pathStr); // it's still absolute
     expect(require(pathStr)).to.eql(required);
 });
 
