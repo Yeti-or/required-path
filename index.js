@@ -1,4 +1,5 @@
 var path = require('path');
+var assert = require('assert');
 
 /**
  * Prepare string that contains path for require()
@@ -23,6 +24,7 @@ var path = require('path');
  */
 
 module.exports = function(pathStr) {
+    assert(typeof(pathStr) === 'string', 'Provide path as String.');
     if (path.isAbsolute(pathStr)) {
         return pathStr;
     } else {

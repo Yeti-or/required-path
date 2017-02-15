@@ -1,10 +1,10 @@
 {
   "name": "required-path",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Prepare path for require",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -13,12 +13,17 @@
   "keywords": [
     "path",
     "require",
-    "relative"
+    "relative fix"
   ],
   "author": "Vasiliy Loginevskiy <yeti.or@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Yeti-or/required-path/issues"
   },
-  "homepage": "https://github.com/Yeti-or/required-path#readme"
+  "homepage": "https://github.com/Yeti-or/required-path#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "req-from": "^1.0.1"
+  }
 }
