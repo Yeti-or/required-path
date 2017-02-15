@@ -1,0 +1,24 @@
+{
+  "name": "required-path",
+  "version": "1.0.0",
+  "description": "Prepare path for require",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yeti-or/required-path.git"
+  },
+  "keywords": [
+    "path",
+    "require",
+    "relative"
+  ],
+  "author": "Vasiliy Loginevskiy <yeti.or@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Yeti-or/required-path/issues"
+  },
+  "homepage": "https://github.com/Yeti-or/required-path#readme"
+}
