@@ -24,6 +24,17 @@ Handy helper to prepare your string for require().
 [david]:          https://david-dm.org/yeti-or/required-path
 [dependency-img]: http://img.shields.io/david/yeti-or/required-path.svg
 
+The emergence of this module is due to the fact that some methods of [path] module could return “un-required” path.
+
+For example:
+
+`path.relative('foo/bar', 'foo/baz.js')` will return `'../baz.js'`, and we could require it.
+
+But `path.relative('foo', 'foo/bar/baz.js')` will return  `'bar/baz.js'`, and such path would cause error in require.
+
+[path]: https://nodejs.org/dist/latest-v6.x/docs/api/path.html
+
+
 Usage
 -----
 
@@ -41,3 +52,7 @@ var prepared = requiredPath(file);
 require(prepared); → // now it's okay
 ```
 
+License
+-------
+
+Code released under the [MIT License](LICENSE.txt).
